@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Structure</title>
+    <link rel="stylesheet" href="css/database.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="shortcut icon" href="img/new logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="heading-logo">
+          <img src="img/new logo.png" alt="logo" width="45px" height="45px" />
+          <h1 class="nav-heading">Warehouse Management System</h1>
+        </div>
+        <ul class="navbar-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ui.html">User Features & UI</a></li>
+          <li><a href="database.html">Database Structure</a></li>
+          <li><a href="components.html">System Component</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container1">
+        <h1 class="data-h1">DATABASE STRUCTURES</h1>
+      <h2 class="comment">by - Name - Rajveer Kaur Dhaliwal | Student ID - 202105291</h2>
+        <p>
+          <span class="highlight">Database Structures</span> refer to how information is organized and stored in the database of the Warehouse Management System. It outlines the tables, fields, and relationships between data, which helps in managing and accessing information effectively within the system.
+        </p>
+        <div class="data-features1">
+          <img
+            src="img/inventory table.webp"
+            alt="warehouse img"
+            width="250px"
+            height="250px"
+          />
+
+          <div class="data-features1-1">
+            <h3 class="data">Inventory Table</h3>
+            <li>
+              <span class="li-hightlights">Fields:</span> Item ID, Name,
+              Description, Quantity, Location, Supplier ID, Cost, etc.
+            </li>
+            <li>
+              <span class="li-hightlights">Relationships:</span> Connected to
+              the Supplier table for supplier details.
+            </li>
+          </div>
+        </div>
+
+        <div class="data-features1">
+          <div class="data-features1-2">
+            <h3 class="data">Order Table</h3>
+            <li>
+              <span class="li-hightlights">Fields:</span> Order ID, Customer ID,
+              Date, Status, Total Amount, etc.
+            </li>
+            <li>
+              <span class="li-hightlights">Relationships:</span> Linked to the
+              Inventory table for items included in the order.
+            </li>
+          </div>
+          <img
+            src="img/order table.png"
+            alt="warehouse img"
+            width="250px"
+            height="250px"
+          />
+        </div>
+
+        <div class="data-features1">
+          <img
+            src="img/supplier table.png"
+            alt="warehouse img"
+            width="350px"
+            height="250px"
+          />
+
+          <div class="data-features1-1">
+            <h3 class="data">Supplier Table</h3>
+            <li>
+              <span class="li-hightlights">Fields:</span> Supplier ID, Name,
+              Contact Information, Product Catalog, etc.
+            </li>
+            <li>
+              <span class="li-hightlights">Relationships:</span> Associated with
+              the Inventory table for products supplied.
+            </li>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
